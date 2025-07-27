@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="main_card">
+      <h1>Password Generator</h1>
+      <div class="container">
+        <div class="text">
+          <input type="text" placeholder="Password" class="display" readonly id="passwordDisplay" />
+          <button id="copyBtn" title="Copy to clipboard">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+        </div>
+
+        <div class="details">
+          <!-- password length -->
+          <div class="length">
+            <label for="lengthInput">Password Length:</label>
+            <input type="number" id="lengthInput" min="1" max="20" value="12" />
+          </div>
+
+          <!-- slider --> 
+          <input type="range" id="lengthSlider" min="1" max="20" value="12" />
+
+          <!-- checkboxes -->
+          <div class="checkboxes">
+            <div>
+              <input type="checkbox" id="uppercase" checked />
+              <label for="uppercase">Include Uppercase Letters</label>
+            </div>
+            <div>
+              <input type="checkbox" id="lowercase" checked />
+              <label for="lowercase">Include Lowercase Letters</label>
+            </div>
+            <div>
+              <input type="checkbox" id="numbers" checked />
+              <label for="numbers">Include Numbers</label>
+            </div>
+            <div>
+              <input type="checkbox" id="symbols" />
+              <label for="symbols">Include Symbols</label>
+            </div>
+          </div>
+
+          <!-- strength section -->
+          <div class="strength-container">
+            <p>Strength:</p>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <div id="strengthLabel">None</div>
+              <div class="color" id="strengthColor"></div>
+            </div>
+          </div>
+
+          <!-- generate button -->
+          <div class="button">
+            <button id="generateBtn">Generate Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

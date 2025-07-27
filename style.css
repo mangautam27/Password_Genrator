@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main_card {
+  background-color: #1f1f2e;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 500px;
+}
+
+.main_card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.container .text {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container button {
+  background-color: #4caf50;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.details .length {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.checkboxes div {
+  margin-bottom: 10px;
+}
+
+.strength-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 15px;
+}
+
+.strength-container .color {
+  height: 16px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: grey;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#strengthLabel {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.button button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button button:hover {
+  background-color: #0056b3;
+}
